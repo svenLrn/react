@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const helloName = (name) =>{
-    return <h1>Hello, {name}</h1>
+  const sumOf = (a,b) =>{
+    const sum = (a+b)
+    return <h2>{sum}</h2>
   }
 
   return (
     <>
-      {helloName('Alex')}
+      {sumOf(2,2)}
     </>
   )
 }
