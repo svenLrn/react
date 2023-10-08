@@ -4,11 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const hello = <h1>Hello, World!</h1>
+  const helloName = (name) =>{
+    return <h1>Hello, {name}</h1>
+  }
 
   return (
     <>
-      {hello}
+      {helloName('Alex')}
     </>
   )
 }
