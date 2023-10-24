@@ -1,7 +1,7 @@
-export const AlertClock = () =>{
+export const AlertClock = ({event}) =>{
     return (
     <>
-        <button onClick={() => alert(new Date().toLocaleTimeString())}>click</button>
+        <button onClick={event}>click</button>
     </>
     )
 }
