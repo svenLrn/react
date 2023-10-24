@@ -3,7 +3,8 @@ export const Welcome = ({name, age}) =>{
     return (
     <>
         <p>Welcome, {name}!</p>
-        {age >= 18 && <Age age = {age}/>}
+        {!!age && <Age age = {age}/>}
+        {age === 0 && <Age age = {age}/>}
     </>
     )
 }
