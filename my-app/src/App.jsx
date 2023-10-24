@@ -1,10 +1,9 @@
-
-import { Welcome } from "./Welcome";
+import { AlertClock } from "./AlertClock";
 
 export function App(){
     return(
         <div>
-            <Welcome name = 'John' age = '12'/>
+            <AlertClock/>
         </div>
     )
 }
