@@ -4,7 +4,7 @@ export const Welcome = ({name, age}) =>{
     <>
         <p>Welcome, <strong>{name}</strong>!</p>
         
-        {age >= 18 && age<=65 && name == 'John' ? <Age age = {age}/> : null}
+        {age >= 18 ? <Age age = {age}/> : 'You are very young!'}
     </>
     )
 }
