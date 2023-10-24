@@ -1,12 +1,10 @@
-import { HelloWorld } from "./HelloWorld";
-import { Message } from "./Message";
+
+import { Welcome } from "./Welcome";
 
 export function App(){
     return(
         <div>
-            <HelloWorld/>
-            <HelloWorld/>
-            <Message/>
+            <Welcome name = 'Sven'/>
         </div>
     )
 }

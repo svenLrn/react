@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { HelloWorld } from './HelloWorld'
+
 import { App } from './App'
 
 
