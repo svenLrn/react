@@ -10,7 +10,7 @@ export function Clock() {
         return()=>{
             clearInterval(intervalId)
         }
-    }, [date])
+    }, [])
 
     return(
         <div>
