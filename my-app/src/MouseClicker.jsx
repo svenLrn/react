@@ -1,13 +1,13 @@
 export function MouseClicker() {
     const handleButtonClick = (event) => {
-        console.log(event.currentTarget.name) // it's printed, since we still using currentTarget on the button
+        console.log(event.target.name) 
     }
-    const handleImgClick = (event) =>{
-        console.log(event.currentTarget.src)
-    }
+    
     return(
         <div>
-            <button onClick={handleButtonClick} name = 'one'><img onClick={handleImgClick} src="googoole.com" width="30px" height='30px' /> Click</button>
+            <button onClick={handleButtonClick} name = 'one'> Click</button>
+            <button onClick={handleButtonClick} name = 'two'> Click</button>
+            <button onClick={handleButtonClick} name = 'three'> Click</button>
         </div>
     )
 }
