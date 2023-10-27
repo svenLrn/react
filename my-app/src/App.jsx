@@ -1,11 +1,9 @@
-import { Counter } from "./Counter";
-
-
+import { Clock } from "./Clock";
 
 export function App(){
     return(
         <div>
-            <Counter initialValue = {2} increment = {5} />
+            <Clock/>
         </div>
     )
 }
