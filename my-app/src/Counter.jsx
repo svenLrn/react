@@ -8,7 +8,7 @@ export function Counter({initialValue = 0, increment = 1}) {
     return (
         <div>
             <h2>{counter}</h2>
-            <button onClick={handleCount}>+1</button>
+            <button onClick={handleCount}>+{increment}</button>
         </div>
     )
 }
