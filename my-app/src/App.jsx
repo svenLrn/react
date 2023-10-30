@@ -5,7 +5,7 @@ import { Login } from "./Login";
 export function App(){
     return(
         <div>
-            <Login/>
+            <Login onLogin={()=> console.log('Logined')}/>
         </div>
     )
 }
