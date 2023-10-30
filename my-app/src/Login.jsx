@@ -21,6 +21,16 @@ export function Login({onLogin}){
             }
         })
     }
+    function handleReset(event){
+        setData((d)=>{
+            return {
+                ...data,
+                login: '',
+                password: '',
+                remember: false
+            }
+        })
+    }
 
     return(
         <div>
@@ -28,6 +38,7 @@ export function Login({onLogin}){
             <input name="password" type="password" value={data.password} onChange={handleInput}/>
             <input name="remember" type="checkbox" checked ={data.remember} onChange={handleInput}/>
             <button onClick={onLogin} disabled={!data.login || !data.password}>Login</button>
+            <button onClick={handleReset}>Reset</button>
         </div>
     )
 }
