@@ -1,10 +1,10 @@
 
-import { Welcome } from "./Welcome";
+import { InteractiveWelcome } from "./InteractiveWelcome";
 
 export function App(){
     return(
         <div>
-            <Welcome name = {<strong>Sven</strong>} age = '19'/>
+            <InteractiveWelcome age = {18}/>
         </div>
     )
 }
