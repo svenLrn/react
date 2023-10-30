@@ -44,7 +44,7 @@ export function Login({onLogin}){
                 <input name="password" type="password" value={data.password} onChange={handleInput}/>
                 <input name="remember" type="checkbox" checked ={data.remember} onChange={handleInput}/>
                 <button type="submit" disabled={!data.login || !data.password}>Login</button>
-                <button onClick={handleReset}>Reset</button>
+                <button type="button" onClick={handleReset}>Reset</button>
             </form>
         </div>
     )
