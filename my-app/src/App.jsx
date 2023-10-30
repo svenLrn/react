@@ -1,13 +1,12 @@
-import { Login } from "./Login";
-import { UncontrolledLogin } from "./UncontrolledLogin";
+import { FocusableInput } from "./FocusableInput";
+
 
 
 
 export function App(){
     return(
         <div>
-            <Login onLogin={()=> console.log('Logined')}/>
-            <UncontrolledLogin onLogin={()=> console.log('Logined')}/>
+            <FocusableInput/>
         </div>
     )
 }
