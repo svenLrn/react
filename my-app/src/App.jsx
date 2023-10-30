@@ -1,12 +1,18 @@
-import { FocusableInput } from "./FocusableInput";
+import React from "react";
+
+import { MountingControl } from "./MountingControl";
+
 
 
 
 
 export function App(){
     return(
-        <div>
-            <FocusableInput/>
-        </div>
+        <React.StrictMode>
+            <div>
+                <MountingControl/>
+            </div>
+        </React.StrictMode>
+        
     )
 }
