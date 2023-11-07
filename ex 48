@@ -1,0 +1,1 @@
+FormData and event.target.elements.namedItem('').value are standard API. not standart are using querySelector or event.target.''.value
