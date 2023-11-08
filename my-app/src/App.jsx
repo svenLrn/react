@@ -1,11 +1,14 @@
-import { Counter } from "./Counter";
+import { Colors } from "./Colors";
+
 
 
 
 export function App(){
     return(
+        
         <div>
-            <Counter initialValue = {2} increment = {5} />
+            <Colors colors={['red', 'green', 'blue']}/>
         </div>
+        
     )
 }
