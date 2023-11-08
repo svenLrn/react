@@ -1,3 +1,5 @@
-.navigation {
+.welcome {
+    background-color: green;
+    border: 2px solid black;
     padding: 30px;
 }
