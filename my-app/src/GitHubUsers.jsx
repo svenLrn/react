@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { GitHubUser } from "./GitHubUser";
 import { useGithubUsers } from "./useGithubUsers";
+import { Link } from "react-router-dom";
 
 export function GitHubUsers() {
   const { users, isLoading, isError } = useGithubUsers();
-  const [selectedUser, setSelectedUser] = useState(null);
+  
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -14,10 +15,7 @@ export function GitHubUsers() {
     return <div>Error loading user data</div>;
   }
 
-  const handleUserClick = (event, username) => {
-    event.preventDefault();
-    setSelectedUser(username);
-  }
+ 
 
   return (
     <div>
@@ -25,8 +23,9 @@ export function GitHubUsers() {
       <ul>
         {users.map((user) => (
           <li key={user.login}>
-            <button onClick={(e) => handleUserClick(e, user.login)}>{user.login}</button>
-            {selectedUser === user.login && <GitHubUser username={selectedUser} />}
+            <Link to={`/users/${user.login}`}>
+              {user.login}
+            </Link>
           </li>
         ))}
       </ul>

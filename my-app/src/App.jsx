@@ -4,6 +4,7 @@ import { Counter } from "./Counter";
 import { ShowGithubUser } from "./ShowGithubUser";
 import { Navigation } from "./Navigation";
 import { NotFound } from "./NotFound";
+import { GitHubUsers } from "./GitHubUsers";
 
 
 
@@ -15,6 +16,7 @@ export function App(){
             <Routes>
                 <Route path="/" element={<Welcome name="John" age={30}/>} />
                 <Route path="/counter" element={<Counter />} />
+                <Route path="/users" element={<GitHubUsers />} /> 
                 <Route path="/users/:username" element={<ShowGithubUser />} />
                 <Route path="*" element={<NotFound/>} />
             </Routes>

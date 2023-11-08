@@ -5,7 +5,7 @@ export function Navigation () {
         <div >
             <Link className="navigation" to="/">Welcome</Link>
             <Link className="navigation" to="/counter">Counter</Link>
-            <Link className="navigation" to="/users/first">Users</Link>
+            <Link className="navigation" to="/users/">Users</Link>
             {/* <Link className="navigation" to="/githubuser">GitHubUser</Link>
             <Link className="navigation" to="/profile">Profile</Link>
             <Link className="navigation" to="/home">Home</Link> */}
