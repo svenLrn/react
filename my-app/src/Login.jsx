@@ -41,7 +41,8 @@ export function Login({onLogin}){
       }
     return(
         <div>
-            
+            {/* FormData and event.target.elements.namedItem('').value are standard API.
+             not standart are using querySelector or event.target.''.value */}
             <form onSubmit={handleSubmit}>
                 <input name="login" type="text" value={data.login} onChange={handleInput} />
                 <input name="password" type="password" value={data.password} onChange={handleInput}/>
