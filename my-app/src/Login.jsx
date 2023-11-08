@@ -36,6 +36,10 @@ export function Login({onLogin}){
         event.preventDefault(); 
         onLogin(); 
       }
+
+      const loginButtonStyle = {
+        backgroundColor: data.password.length < 8 ? "red" : "green"
+      };
     return(
         <div>
             
@@ -43,7 +47,7 @@ export function Login({onLogin}){
                 <input name="login" type="text" value={data.login} onChange={handleInput} />
                 <input name="password" type="password" value={data.password} onChange={handleInput}/>
                 <input name="remember" type="checkbox" checked ={data.remember} onChange={handleInput}/>
-                <button type="submit" disabled={!data.login || !data.password}>Login</button>
+                <button type="submit" disabled={!data.login || !data.password} style={loginButtonStyle}>Login</button>
                 <button type="button" onClick={handleReset}>Reset</button>
             </form>
         </div>

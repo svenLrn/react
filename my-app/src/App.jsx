@@ -1,5 +1,6 @@
 import { Colors } from "./Colors";
 import { Counter } from "./Counter";
+import { Login } from "./Login";
 import { TodoList } from "./TodoList";
 import { Welcome } from "./Welcome";
 
@@ -18,6 +19,7 @@ export function App(){
             <TodoList/>
             <Welcome name={'John'} age={30}/>
             <Counter/>
+            <Login onLogin={()=> console.log('Logined')}/>
         </div>
         
     )
