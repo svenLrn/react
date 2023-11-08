@@ -1,0 +1,1 @@
+It's better to use a callback instead of a value, because otherwise if you use several setters in a row inside a function, they will all work with the old value
