@@ -5,13 +5,15 @@ import { ShowGithubUser } from "./ShowGithubUser";
 import { Navigation } from "./Navigation";
 import { NotFound } from "./NotFound";
 import { GitHubUsers } from "./GitHubUsers";
+import { SWRConfig } from "swr";
 
-
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 
 export function App(){
     return(
-        <div>
+        <SWRConfig value={{fetcher}}>
+            <div>
             <Navigation />
             <Routes>
                 <Route path="/" element={<Welcome name="John" age={30}/>} />
@@ -29,6 +31,8 @@ export function App(){
                 <Route path="*" element={<NotFound/>} />
             </Routes>
         </div>
+        </SWRConfig>
+        
         
         
     )
