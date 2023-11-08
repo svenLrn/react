@@ -11,11 +11,15 @@ export function useGithubUser (username) {
   }
     const { data, error } = useSWR(`https://api.github.com/users/${username}`, fetcher);
 
+    const refreshData = () => {
+      mutate(`https://api.github.com/users/${username}`);
+    };
 
     return {
         user: data,
         isLoading: !data && !error,
         isError: error,
+        refreshData,
       };
     
     
