@@ -24,9 +24,17 @@ export function Counter({initialValue = 0, increment = 1}) {
     function resetCount() {
         setCounter(initialValue);
     }
+
+    const counterDisplayStyle = {
+        fontSize: '24px', 
+        color: 'blue',    
+        
+      };
+
+
     return (
         <div>
-            <CounterDisplay counter = {counter}/>
+            <CounterDisplay counter = {counter} style = {counterDisplayStyle}/>
             <button onClick={handleCount}>+{increment}</button>
             <button onClick={handleDecrement}>-{increment}</button>
             <button onClick={resetCount}>to {initialValue}</button>

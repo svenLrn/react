@@ -1,4 +1,5 @@
 import { Colors } from "./Colors";
+import { Counter } from "./Counter";
 import { TodoList } from "./TodoList";
 import { Welcome } from "./Welcome";
 
@@ -16,6 +17,7 @@ export function App(){
   ]}/>
             <TodoList/>
             <Welcome name={'John'} age={30}/>
+            <Counter/>
         </div>
         
     )
