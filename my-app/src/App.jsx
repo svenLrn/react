@@ -21,7 +21,7 @@ export function App(){
             <Welcome name={'John'} age={30}/>
             
             <Login onLogin={()=> console.log('Logined')}/>
-            <Container><TodoList/></Container>
+            <Container title="Container Title"><TodoList/></Container>
         </div>
         
     )
