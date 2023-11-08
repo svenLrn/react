@@ -7,7 +7,11 @@ export function App(){
     return(
         
         <div>
-            <Colors colors={['red', 'green', 'blue']}/>
+            <Colors colors={[
+    { id: 1, name: 'red' },
+    { id: 2, name: 'green' },
+    { id: 3, name: 'blue' },
+  ]}/>
         </div>
         
     )
