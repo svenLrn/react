@@ -7,6 +7,7 @@ import { Welcome } from "./Welcome";
 import { Clock } from "./Clock";
 
 import { GitHubUsers } from "./GitHubUsers";
+import { UserLocation } from "./UserLocation";
 
 
 
@@ -28,7 +29,7 @@ export function App(){
             <LanguageProvider>
                 <Clock/>
             </LanguageProvider>
-            
+            <UserLocation/>
         </div>
         
     )
