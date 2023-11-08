@@ -17,12 +17,12 @@ export function Clock() {
     const clockTitle = () => {
         switch (selectedLanguage) {
           case "en":
-            return "Clock";
+            return "current time";
           case "it":
-            return "Orologio";
+            return "ora attuale";
           
           default:
-            return "Clock";
+            return "current time";
         }
       };
 
