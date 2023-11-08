@@ -28,7 +28,7 @@ export function App(){
             <LanguageProvider>
                 <Clock/>
             </LanguageProvider>
-            <GitHubUsers/>
+            
         </div>
         
     )
