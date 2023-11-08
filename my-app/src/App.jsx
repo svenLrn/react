@@ -5,6 +5,7 @@ import { Login } from "./Login";
 import { TodoList } from "./TodoList";
 import { Welcome } from "./Welcome";
 import { Clock } from "./Clock";
+import { GitHubUser } from "./GitHubUser";
 
 
 
@@ -26,7 +27,7 @@ export function App(){
             <LanguageProvider>
                 <Clock/>
             </LanguageProvider>
-            
+            <GitHubUser username={'svenLrn'}/>
         </div>
         
     )

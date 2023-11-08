@@ -1,6 +1,6 @@
 import { useGithubUser } from "./useGithubUser";
 
-const fetcher = (url) => fetch(url).then((res) => res.json());
+
 export function GitHubUser({username}){
     const { user, isLoading, isError } = useGithubUser(username);
 
@@ -15,6 +15,8 @@ export function GitHubUser({username}){
   return (
     <div>
       <h1>{user.name}</h1>
+      <p>{user.login}</p>
+      <img src={user.avatar_url} alt={user.name} />
     </div>
   );
 }
