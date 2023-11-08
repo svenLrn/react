@@ -1,7 +1,6 @@
-import { useState } from "react";
-import { GitHubUser } from "./GitHubUser";
+
 import { useGithubUsers } from "./useGithubUsers";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 
 export function GitHubUsers() {
   const { users, isLoading, isError } = useGithubUsers();
@@ -20,6 +19,7 @@ export function GitHubUsers() {
   return (
     <div>
       <h1>GitHub Users</h1>
+      
       <ul>
         {users.map((user) => (
           <li key={user.login}>
