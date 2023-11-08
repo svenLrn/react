@@ -10,6 +10,9 @@ export function TodoList() {
           setNewItem('');
         }
     };
+    const resetItems = () => {
+        setItems([]);
+      };
     return (
         <div>
       <h2>Todo List</h2>
@@ -26,6 +29,7 @@ export function TodoList() {
           onChange={(e) => setNewItem(e.target.value)}
         />
         <button onClick={addItem}>Add</button>
+        <button onClick={resetItems}>Reset</button>
       </div>
     </div>
     );
