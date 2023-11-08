@@ -11,7 +11,10 @@ export function Login({onLogin}){
     function handleInput(event){
         const name = event.target.name;
         const value = event.target.value
-        const checked = event.target.checked 
+        const checked = event.target.checked // using event or FormData for example:
+                                            // const formData = new FormData(event.target);
+                                            // const name = formData.get("login");
+                                            // const value = formData.get("password");
         const type = event.target.type
 
         setData((d)=>{
