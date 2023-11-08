@@ -1,0 +1,1 @@
+If you remove the LanguageProvider context provider, the Clock component will lose access to the LanguageContext, and it won't be able to access the selected language. 
